@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atul Anand | Portfolio</title>
+  <meta
+    name="description"
+    content="Atul Anand portfolio website featuring career journey, projects, media gallery, and contact details."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Atul Anand</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <nav>
+        <ul id="site-menu" class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1>I build and scale products across design, growth, and execution.</h1>
+          <p class="hero-copy">
+            This website is built to showcase my work, career journey, and all media assets in one place —
+            including photos, PDFs, and videos.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore Work</a>
+            <a class="btn secondary" href="#media">View Media</a>
+          </div>
+          <div class="external-links">
+            <span>Existing websites:</span>
+            <a href="https://atulanand.my.canva.site/" target="_blank" rel="noreferrer">Canva Site</a>
+            <a href="https://www.modum.me" target="_blank" rel="noreferrer">Modum</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h2>Highlights</h2>
+          <ul>
+            <li><strong>Now:</strong> Building and sharing current work</li>
+            <li><strong>Focus:</strong> Product, business, growth</li>
+            <li><strong>Format:</strong> Case studies + media-rich portfolio</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>
+            I am Atul Anand. Use this section for your personal story, your strengths, industries,
+            and the type of opportunities you are pursuing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="career" class="section alt-bg">
+      <div class="container">
+        <div class="section-head">
+          <h2>Career Path</h2>
+          <p>Chronological journey of milestones, roles, and transitions.</p>
+        </div>
+        <div id="careerTimeline" class="timeline"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Work</h2>
+          <p>Project cards generated from data so you can quickly add and update work.</p>
+        </div>
+        <div id="projectGrid" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="media" class="section alt-bg">
+      <div class="container">
+        <div class="section-head">
+          <h2>Media Gallery</h2>
+          <p>
+            This section supports videos, PDFs, and photos. Replace sample paths with your repository files.
+          </p>
+        </div>
+
+        <div class="media-tabs" role="tablist" aria-label="Media type tabs">
+          <button class="tab-btn active" data-tab="videos" role="tab" aria-selected="true">Videos</button>
+          <button class="tab-btn" data-tab="pdfs" role="tab" aria-selected="false">PDFs</button>
+          <button class="tab-btn" data-tab="photos" role="tab" aria-selected="false">Photos</button>
+        </div>
+
+        <div id="videos" class="tab-panel active" role="tabpanel"></div>
+        <div id="pdfs" class="tab-panel" role="tabpanel"></div>
+        <div id="photos" class="tab-panel" role="tabpanel"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Open for collaborations, consulting, and project partnerships.</p>
+        </div>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li>LinkedIn: <a href="#">Add your profile URL</a></li>
+          <li>Location: Add your city/country</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Atul Anand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
